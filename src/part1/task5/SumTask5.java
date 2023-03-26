@@ -8,7 +8,7 @@ public class SumTask5 {
     }
 
     public static int sum(int a, int b) {
-        int s = a + b;
+        int s = a + b + a * b;
         return s;
     }
 }

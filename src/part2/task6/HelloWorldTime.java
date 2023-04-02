@@ -1,4 +1,4 @@
-package part1.task6;
+package part2.task6;
 
 public class HelloWorldTime {
     public static void main(String[] args) {

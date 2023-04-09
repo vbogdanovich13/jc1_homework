@@ -7,6 +7,5 @@ public class Main {
             cashMachine.printMenu();
             cashMachine.readMenuNumber();
         }
-
     }
 }

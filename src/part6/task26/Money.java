@@ -47,4 +47,5 @@ public class Money {
         this.fifty = fifty;
         this.hundred = hundred;
     }
+
 }

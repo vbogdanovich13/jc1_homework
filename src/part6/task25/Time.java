@@ -22,7 +22,7 @@ public class Time implements Comparable<Time> {
     public Time(Integer s) {
         this.sec = s % 60;
         int m = (s - sec) / 60;
-        this. min = m % 60;
+        this.min = m % 60;
         this.hour = (m - min) / 60;
     }
 
@@ -30,7 +30,7 @@ public class Time implements Comparable<Time> {
         System.out.println(hour + " " + min + " " + sec);
     }
 
-    public int convertTimeToSeconds () {
+    public int convertTimeToSeconds() {
         int s = sec + (min * 60) + (hour * 60 * 60);
         return s;
     }

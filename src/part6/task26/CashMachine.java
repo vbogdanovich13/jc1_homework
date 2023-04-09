@@ -84,5 +84,4 @@ public class CashMachine {
         System.out.println("Amount banknotes 100$ = " + "[ " + hundredNumbers + " pcs.]" + ", 50$ = [ " + fiftyNumbers + " pcs.], " + "20$ = [ " + twentyNumbers + " pcs.]");
     }
 
-
 }

@@ -1,18 +1,24 @@
 package part8.task38;
-
-
 import java.util.Scanner;
 
 public class Task38 {
     public static void main(String[] args) {
-        System.out.println("Чтобы узнать количество дней в сезоне, введите его порядковый номер.");
+        while (true) {
+            printMenu();
+            readMenu();
+        }
+
+    }
+    static void printMenu() {
         for (int i = 1; i < 5; ) {
             for (SeasonsYear s : SeasonsYear.values()) {
                 System.out.println(i + ". " + s);
                 i++;
             }
         }
-
+        System.out.println("Чтобы узнать количество дней в сезоне, введите его порядковый номер.");
+    }
+    static void readMenu(){
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         String str = "Количество дней в сезоне: ";
@@ -32,6 +38,6 @@ public class Task38 {
             default:
                 System.out.println("Сезона года под таким номером не существует.");
         }
-
+        System.out.println("");
     }
 }

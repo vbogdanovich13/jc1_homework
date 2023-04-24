@@ -5,15 +5,26 @@ import java.util.Scanner;
 
 public class Task37 {
     public static void main(String[] args) {
-        System.out.println("Введите порядковый номер сезона года.");
+        while (true) {
+            printMenu();
+            readMenu();
+        }
+
+
+    }
+
+    static void printMenu() {
+
         for (int i = 1; i < 5; ) {
             for (SeasonsYear s : SeasonsYear.values()) {
                 System.out.println(i + ". " + s);
                 i++;
             }
         }
+        System.out.println("Введите порядковый номер сезона года:");
+    }
 
-
+    static void readMenu() {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         switch (num) {
@@ -32,7 +43,7 @@ public class Task37 {
             default:
                 System.out.println("Сезона года под таким номером не существует.");
         }
-
+        System.out.println("");
     }
 
 

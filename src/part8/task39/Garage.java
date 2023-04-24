@@ -1,25 +1,25 @@
 package part8.task39;
 
-public class Garage <T extends Vehicle, M extends Vehicle>{
-    private T vehicle;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
 
-    public T getVehicle() {
-        return vehicle;
+public class Garage<T extends Vehicle> {
+
+    private final List<T> vehicles;
+
+    public Garage() {
+        vehicles = new ArrayList <>();
     }
 
-    public void setVehicle(T vehicle) {
-        this.vehicle = vehicle;
+    public void addAll(List<? extends T> list) {
+        vehicles.addAll(list);
     }
-
-    public M getVehicle2() {
-        return vehicle2;
+    public void forEach(Consumer<? super T> consumer) {
+        for (T vehicle : vehicles) {
+            consumer.accept(vehicle);
+        }
     }
-
-    public void setVehicle2(M vehicle2) {
-        this.vehicle2 = vehicle2;
-    }
-
-    private M vehicle2;
 
 
 }

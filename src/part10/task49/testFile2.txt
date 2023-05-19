@@ -1,0 +1,1 @@
+ 5 6 8 9 9 6 We have to buy the following things: bread, butter, milk, a cake. 5 6 8 9 9 6
